@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+          "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.model.User" table="Customer3">
+		<id name="customerId">
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="name" length="20"></property>
+		<property name="email" length="20"></property>
+		<property name="phone"></property>
+		<property name="pword"></property>
+		<property name="gender"></property>
+		
+		<list name="bought" table="bought3">
+          <key column="bcustomerId"></key>
+          <index column="type"></index>
+          <element column="product" type="string" length="50"></element>
+          </list>
+		
+		<list name="wished" table="wished3">
+          <key column="wcustomerId"></key>
+          <index column="type"></index>
+          <element column="product" type="string" length="50"></element>
+          </list>
+          
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<script src = "http://localhost:8081/AmazonLike/script/jquery-1.12.1.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+<script src = "http://localhost:8081/AmazonLike/script/signup.js" ></script>
+
+</head>
+<body>
+<form id = "form" action = "jsp/storeData.jsp">
+<table>
+	<tr>
+		<td><label for = "Name">Username</label></td>
+		<td><input type = "text" id = "t1" name ="name"/></td>
+		<td><span id = "s1"></span></td>
+	</tr>
+	<tr>
+		<td><label for = "Password">Password</label></td>
+		<td><input type = "password" id = "t4" name ="pword"/></td>
+		<td><span id = "s4"></span></td>
+	</tr>
+	<tr>
+		<td><label for = "Email">Email</label></td>
+		<td><input type = "text" id = "t2" name ="email"/></td>
+		<td><span id = "s2"></span></td>
+	</tr>
+	<tr>
+		<td><label for = "Phone">Phone</label></td>
+		<td><input type = "text" id ="t3" name ="phone"/></td>
+		<td><span id = "s3"></span></td>
+	</tr>
+	<tr>
+		<td><label for = "Gender">Gender</label></td>
+		<td><ul>
+		<li><input type = "radio" value = "Male" name ="gender">Male</li>
+		<li><input type = "radio" value = "Female" name  = "gender">Female</li>
+		</ul></td>
+	</tr>
+	<tr>
+		<td><input type = "submit" value = "Submit"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
