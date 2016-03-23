@@ -15,7 +15,7 @@
 		<property name="pword"></property>
 		<property name="gender"></property>
 		
-		<list name="bought" table="bought3">
+		<list name="bought" table="bought3" lazy = "false" fetch = "join">
           <key column="bcustomerId"></key>
           <index column="type"></index>
           <element column="product" type="string" length="50"></element>

@@ -11,8 +11,8 @@ public class User {
 	private String email;
 	private String phone;
 	private String gender;
-	List<String> bought;
-	List<String> wished;
+	List<String> bought = new ArrayList<>();
+	List<String> wished = new ArrayList<>();
 	
 	public int getCustomerId() {
 		return customerId;
@@ -23,30 +23,18 @@ public class User {
 	}
 	
 	public List<String> getBought() {
-		if(bought == null || bought.size()==0)
-			return new ArrayList<String>();
-		else
 			return bought;
 	}
 
 	public void setBought(List<String> bought) {
-		if(bought == null || bought.size()==0)
-			this.bought = new ArrayList<String>();
-		else 
 			this.bought = bought;
 	}
 
 	public List<String> getWished() {
-		if(wished == null || wished.size()==0)
-			return new ArrayList<String>();
-		else
 			return wished;
 	}
 
 	public void setWished(List<String> wished) {
-		if(wished == null || wished.size()==0)
-			this.wished = new ArrayList<String>();
-		else 
 			this.wished = wished;
 	}
 
